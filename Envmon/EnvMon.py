@@ -3,7 +3,7 @@
 # Also logs errors to log.txt file
 # By Craig Brennan
 
-CONST_VERSION = 3.7
+CONST_VERSION = 3.8
 
 import sys
 import serial
@@ -94,7 +94,7 @@ def save_offline(currenttime,temperature,wind,rain,humidity,pressure,wind_dir):
 	data_string = json.dumps(data,sort_keys=False)
 	
 	# Open File and append data
-	f = open('/home/pi/EnvMon/logs/offline_data.txt','a')
+	f = open('/home/pi/EnvMon/logs/offline_data.txt','a+')
 	f.write(data_string + '\r\n')
 	f.close()
 	
