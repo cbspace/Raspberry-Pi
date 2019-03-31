@@ -18,9 +18,9 @@ from BMP085 import BMP085
 
 # Constants
 temperature_position = 0	# Temperature list reference
-wind_position = 1			# Wind speed list reference
-rain_position = 2			# Rain list reference
-humidity_position 	 = 3	# Humidity list reference
+wind_position = 1		# Wind speed list reference
+rain_position = 2		# Rain list reference
+humidity_position = 3	        # Humidity list reference
 
 # How often to update server (x 5 seconds)
 WEB_COUNT_MAX = 60
